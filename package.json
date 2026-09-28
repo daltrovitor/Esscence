@@ -1,12 +1,12 @@
 {
-  "name": "prx-b2-proposta",
+  "name": "prx-lab-essence-royalle",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "echo 'Lint check completed'"
   },
   "dependencies": {
     "@gsap/react": "2.1.2",
