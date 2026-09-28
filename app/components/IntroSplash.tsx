@@ -237,7 +237,12 @@ export default function IntroSplash({ isOpen, onClose }: IntroSplashProps) {
           }}
           className="mt-6 flex flex-col items-center"
         >
-          <div className="flex items-center gap-3 px-5 py-2.5 border border-zinc-200 bg-zinc-50/90 rounded-sm shadow-xs">
+          {/* Logo / Medalhão Nobre Essence Royalle Centralizado Acima */}
+          <div className="mb-3.5 flex items-center justify-center">
+            <EssenceRoyalleLogo size="md" className="w-16 h-16 sm:w-20 sm:h-20" />
+          </div>
+
+          <div className="inline-flex items-center gap-3 px-5 py-2.5 border border-zinc-200 bg-zinc-50/90 rounded-sm shadow-xs">
             <span className="text-xs font-mono font-semibold tracking-wider text-[#B48328] uppercase">
               ESSENCE ROYALLE
             </span>
@@ -249,14 +254,9 @@ export default function IntroSplash({ isOpen, onClose }: IntroSplashProps) {
             <span className="text-xs font-mono font-medium tracking-wider text-[#0B67FF] uppercase">
               PRX
             </span>
-            <span className="text-zinc-300">|</span>
-            {/* Logo Essence Royalle em SVG com Medalhão */}
-            <div className="w-8 h-8">
-              <EssenceRoyalleLogo size="sm" className="w-8 h-8" />
-            </div>
           </div>
 
-          <p className="mt-3 text-xs sm:text-sm text-zinc-500 font-normal max-w-md">
+          <p className="mt-3 text-xs sm:text-sm text-zinc-500 font-normal max-w-md text-center">
             A próxima geração não quer apenas consumir uma marca. Quer fazer parte dela.
           </p>
         </div>

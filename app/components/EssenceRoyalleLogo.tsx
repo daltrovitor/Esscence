@@ -6,7 +6,7 @@ import { ESSENCE_ROYALLE_DATA } from "../data/essenceLogoData";
 
 export interface EssenceRoyalleLogoProps {
   className?: string;
-  size?: "sm" | "md" | "lg" | "xl";
+  size?: "xs" | "sm" | "md" | "lg" | "xl";
   animated?: boolean;
   separateParts?: boolean;
   onClick?: () => void;
@@ -25,13 +25,15 @@ export default function EssenceRoyalleLogo({
   const { viewBox, fullDataUrl, sealDataUrl, textDataUrl } = ESSENCE_ROYALLE_DATA;
 
   const sizeClass =
-    size === "sm"
-      ? "w-14 h-14 sm:w-16 sm:h-16"
+    size === "xs"
+      ? "w-8 h-8"
+      : size === "sm"
+      ? "w-12 h-12"
       : size === "lg"
       ? "w-28 h-28 sm:w-36 sm:h-36"
       : size === "xl"
       ? "w-40 h-40 sm:w-48 sm:h-48"
-      : "w-20 h-20 sm:w-24 sm:h-24";
+      : "w-16 h-16 sm:w-20 sm:h-20";
 
   return (
     <div
@@ -44,7 +46,7 @@ export default function EssenceRoyalleLogo({
         viewBox={viewBox}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        className={`overflow-visible select-none drop-shadow-xs ${sizeClass} ${className}`}
+        className={`select-none drop-shadow-xs ${sizeClass} ${className}`}
         role="img"
         aria-label="Essence Royalle"
       >
