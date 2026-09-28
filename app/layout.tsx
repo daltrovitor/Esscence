@@ -11,29 +11,27 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "PRX × B2 EVENTOS — A Próxima Geração Precisa de um Lugar Para Acontecer",
+  title: "PRX LAB — ESSENCE ROYALLE × RAFAEL MOLINA × PRX",
   description:
-    "Proposta comercial estratégica entre a PRX e a B2 Eventos: a união entre o ecossistema digital da nova geração de Rafael Molina e a autoridade líder em eventos e experiências presenciais.",
-  authors: [{ name: "PRX & B2 Eventos" }, { name: "ViraWeb", url: "https://viraweb.online" }],
+    "Proposta de parceria: criação junto à Essence Royalle de uma linha de suplementação em gummies baseada em drops especiais e edições limitadas cocriadas e assinadas por jovens da Gen Z.",
+  authors: [{ name: "Essence Royalle × Rafael Molina × PRX" }, { name: "ViraWeb", url: "https://viraweb.online" }],
   keywords: [
-    "PRX",
-    "B2 Eventos",
+    "PRX LAB",
+    "Essence Royalle",
     "Rafael Molina",
+    "PRX",
+    "Gummies",
+    "Suplementação",
     "Geração Z",
-    "Eventos Universitários",
-    "Formaturas",
-    "PRX PASS",
-    "PRX UP",
-    "PRX RUN",
-    "PRX FOUNDERS",
-    "PRX BREAK",
-    "Experiências",
-    "Comunidade Jovem",
+    "Drops Colecionáveis",
+    "Cocriação",
+    "Edições Limitadas",
+    "Saúde e Bem-Estar",
   ],
   openGraph: {
-    title: "PRX × B2 EVENTOS — Proposta Estratégica",
+    title: "PRX LAB — ESSENCE ROYALLE × RAFAEL MOLINA × PRX",
     description:
-      "A PRX leva a comunidade. A B2 transforma comunidade em experiência. Construindo um fluxo permanente de negócios para a nova geração.",
+      "A próxima geração não quer apenas consumir uma marca. Quer fazer parte dela. Linha de suplementação em gummies cocriada com a Gen Z.",
     type: "website",
     locale: "pt_BR",
   },
@@ -57,7 +55,7 @@ export default function RootLayout({
     <html lang="pt-BR" suppressHydrationWarning className="scroll-smooth">
       <body
         suppressHydrationWarning
-        className="font-sans antialiased bg-white text-slate-900 selection:bg-[#0B67FF] selection:text-white min-h-screen"
+        className="font-sans antialiased bg-white text-slate-900 selection:bg-[#C59B27] selection:text-white min-h-screen"
       >
         <SmoothScrollProvider>{children}</SmoothScrollProvider>
       </body>
