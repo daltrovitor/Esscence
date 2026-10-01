@@ -40,9 +40,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "https://www.viraweb.online/favicon.png",
-    shortcut: "https://www.viraweb.online/favicon.png",
-    apple: "https://www.viraweb.online/favicon.png",
+    icon: "https://prx.app.br/brand/prx-app-icon.svg/",
+    shortcut: "https://prx.app.br/brand/prx-app-icon.svg/",
+    apple: "https://prx.app.br/brand/prx-app-icon.svg/",
   },
 };
 

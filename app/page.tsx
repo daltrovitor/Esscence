@@ -4,7 +4,6 @@
 import React, { useState } from "react";
 import PRXLogo from "./components/PRXLogo";
 import EssenceRoyalleLogo from "./components/EssenceRoyalleLogo";
-import VirawebLogo from "./components/VirawebLogo";
 import IntroSplash from "./components/IntroSplash";
 import {
   FileDown,
@@ -54,7 +53,23 @@ export default function ProposalPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           {/* Aliança de Logos no Topo */}
           <div className="flex items-center gap-3 sm:gap-4">
-            <PRXLogo size="sm" animated={false} className="w-24 sm:w-28" />
+            <div className="flex flex-col items-center">
+              <PRXLogo
+                size="sm"
+                animated={false}
+                showSubtitle={false}
+                className="w-24 sm:w-28"
+              />
+              <span className="-mt-1 inline-flex items-center gap-1 text-[8px] font-semibold tracking-wide text-slate-500">
+                <img
+                  src="https://prx.app.br/brand/prx-app-icon.svg/"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-2.5 w-2.5"
+                />
+                the next pays
+              </span>
+            </div>
             <span className="text-slate-300 font-light text-lg sm:text-xl select-none">
               ×
             </span>
@@ -729,12 +744,18 @@ export default function ProposalPage() {
             <p className="text-lg sm:text-2xl font-bold text-[#E6C875] mb-6">
               Queremos colocá-los dentro do negócio.
             </p>
-            <div className="inline-flex flex-col items-center pt-6 border-t border-slate-800">
+            <div className="inline-flex flex-col items-center pt-6">
               <span className="text-sm font-serif font-bold tracking-widest uppercase text-white">
                 PRX LAB by Essence Royalle
               </span>
-              <span className="text-xs font-mono text-slate-400 mt-1">
-                Created with the next generation.
+              <span className="mt-2 inline-flex items-center gap-1.5 text-xs font-mono text-slate-400">
+                <img
+                  src="https://prx.app.br/brand/prx-app-icon.svg/"
+                  alt=""
+                  aria-hidden="true"
+                  className="h-3.5 w-3.5"
+                />
+                the next pays
               </span>
             </div>
           </div>
@@ -744,31 +765,42 @@ export default function ProposalPage() {
       {/* ========================================================================= */}
       {/* 7. RODAPÉ INSTITUCIONAL                                                   */}
       {/* ========================================================================= */}
-      <footer className="py-12 bg-white border-t border-slate-200 text-slate-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-4">
-            <PRXLogo size="sm" animated={false} className="w-20" />
-            <span className="text-slate-300">×</span>
-            <EssenceRoyalleLogo size="sm" className="w-10 h-10" />
-            <span className="text-xs font-mono text-slate-400">
-              PRX LAB © 2026
-            </span>
+      <footer className="py-10 bg-white text-slate-600">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col gap-2">
+            <p className="text-sm font-semibold text-slate-900">
+              © 2026 PRX. Todos os direitos reservados.
+            </p>
+            <p className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900">
+              <img
+                src="https://prx.app.br/brand/prx-app-icon.svg/"
+                alt=""
+                aria-hidden="true"
+                className="h-5 w-5"
+              />
+              PRX — the next pays.
+            </p>
           </div>
 
-          {/* Botão de Exportação em PDF */}
-          <button
-            type="button"
-            onClick={handlePrint}
-            className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-slate-800 border border-slate-200 hover:border-slate-300 rounded-sm bg-slate-50 transition-all cursor-pointer"
-          >
-            <FileDown className="w-4 h-4 text-[#C59B27]" />
-            <span>Salvar / Exportar Proposta em PDF</span>
-          </button>
-
-          {/* ViraWeb Assinatura */}
-          <div className="flex items-center gap-2">
-            <span className="text-xs text-slate-400 font-mono">Desenvolvido por</span>
-            <VirawebLogo size="sm" />
+          <div className="mt-6 space-y-3 text-[11px] leading-relaxed text-slate-500">
+            <p className="flex flex-wrap gap-x-2">
+              <span>Termos de Uso</span>
+              <span aria-hidden="true">·</span>
+              <span>Política de Privacidade</span>
+              <span aria-hidden="true">·</span>
+              <span>Política de Cookies</span>
+              <span aria-hidden="true">·</span>
+              <span>Segurança</span>
+              <span aria-hidden="true">·</span>
+              <span>Atendimento</span>
+            </p>
+            <p>
+              As marcas, nomes, logotipos, conteúdos, imagens, produtos e serviços apresentados neste site são de propriedade da PRX ou de seus respectivos titulares. É proibida a reprodução, distribuição ou utilização sem autorização prévia.
+            </p>
+            <p>
+              PRX respeita a sua privacidade e realiza o tratamento de dados pessoais em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018).
+            </p>
+            <p>CNPJ: 68025417000142 · Goiânia — GO · Brasil</p>
           </div>
         </div>
       </footer>
